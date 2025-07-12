@@ -1,11 +1,77 @@
-# Monad Blitz Hyderbad Submission Process
+# 🔗 MonadX — All-in-One Next-Gen dApp on Monad
 
-1. Visit the `monad-blitz-hyderabad` repo (link [here](https://github.com/monad-developers/monad-blitz-hyderabad)) and fork it.
+**MonadX** is a powerful full-stack decentralized application (dApp) built on the **Monad testnet**, combining four cutting-edge blockchain features into a single unified platform:
 
-<img width="1511" alt="Screenshot 2025-07-07 at 10 12 23 AM" src="https://github.com/user-attachments/assets/e8196bd5-90f7-4906-9994-2580f1b4b3ba" />
+> Restaking Vaults • Intent-Based DeFi Aggregator • zkML Prediction Oracle • Modular Smart Wallet (ERC-7579)
 
-2. Give it your project name, a one-liner description, make sure you are forking `main` branch and click `Create Fork`.
+⚡ Built in 24 hours for the [Monad Blitz Hackathon – Hyderabad, 2025](https://monad.xyz)
 
-<img width="1511" alt="Screenshot 2025-07-07 at 10 11 40 AM" src="https://github.com/user-attachments/assets/0c35b1d6-e8d1-4f8f-a1af-3bcaa476eec6" />
+---
 
-3. In your fork you can make all the changes you want, add code of your project, create branches, add information to `README.md`, you can change anything and everything.
+## ✨ Features
+
+| Module                | Description                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| 🪙 Restaking Vaults   | Deposit LSTs like rsETH into vaults for parallel restaking across protocols |
+| 💡 DeFi Intent Engine | Express a yield or swap goal; get optimized execution via intents          |
+| 🔮 zkML Oracle        | AI model returns predictions with on-chain zk-proof verification            |
+| 🔐 Smart Wallet (AA)  | Modular wallet with gasless TXs, social recovery, plugins & intents         |
+
+---
+
+## 🧠 Tech Stack
+
+- **Blockchain**: [Monad Testnet](https://monad.xyz)
+- **Smart Contracts**: Solidity (via Foundry or Hardhat)
+- **Frontend**: React + Vite + Tailwind CSS
+- **Wallet Integration**: wagmi + viem + Web3Modal
+- **Account Abstraction**: ERC-7579 modules (gasless, social recovery, etc.)
+- **zkML (Simulated)**: Python model with dummy zk-SNARK verification
+- **Storage**: IPFS/web3.storage (for zkML data)
+- **Deployment**: Vercel
+
+---
+
+## 🚀 Live Demo
+
+> 🔗 https://nexus-monad-dapp-fusion.vercel.app/
+> 🧪 Requires MetaMask + Monad Testnet tokens.
+
+---
+
+## 🖼️ Screenshots
+
+![MonadX Dashboard](./screenshots/dashboard.png)
+![Intent Aggregator](./screenshots/intent.png)
+![zkML Prediction](./screenshots/zkml.png)
+
+---
+
+## 🔄 Modules Overview
+
+### 🪙 Restaking Vaults
+- Deposit rsETH
+- Select vault strategy (auto/manual)
+- Receive NFT receipt
+- Claim staking rewards
+
+### 💡 Intent-Based DeFi Aggregator
+- Express intent (e.g., "5% APY")
+- Backend simulates paths
+- Executes optimal route via smart contract
+
+### 🔮 zkML Prediction Oracle
+- Upload input data (e.g., credit score)
+- Model runs off-chain
+- Returns result + zk-proof
+- Contract verifies proof on-chain
+
+### 🔐 Modular Smart Wallet (ERC-7579)
+- Connects smart wallet
+- Plugin system for:
+  - Gasless transactions
+  - Social recovery
+  - Intent signing
+- Real TXs on Monad
+
+---
